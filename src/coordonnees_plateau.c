@@ -22,11 +22,11 @@ int coordonnees_etre_bordure_plateau(int x,int y)
 void test_coordonnees_etre_bordure_plateau(void)
 {
     puts("Test coordonnees_etre_bordure_plateau \n");
-    if(coordonnees_etre_bordure_plateau(0,2) != 1)
+    if(coordonnees_etre_bordure_plateau(0,2) != 1) // est dans la bordure
         puts("0 2 KO \n");
-    if(coordonnees_etre_bordure_plateau(1,1) != 0)
+    if(coordonnees_etre_bordure_plateau(1,1) != 0) // n'est pas dans la bordure
         puts("1 1 KO \n");
-    if(coordonnees_etre_bordure_plateau(3,4) != 1)
+    if(coordonnees_etre_bordure_plateau(3,4) != 1) // est dans la bordure
         puts("3 4 KO \n");
 }
 
