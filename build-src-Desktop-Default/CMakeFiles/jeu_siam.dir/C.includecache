@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/orientation_deplacement.c
+orientation_deplacement.h
+/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/orientation_deplacement.h
+stdlib.h
+-
+stdio.h
+-
+assert.h
+-
+
+/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/orientation_deplacement.h
+

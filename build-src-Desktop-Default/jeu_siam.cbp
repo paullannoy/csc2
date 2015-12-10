@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="jeu_siam" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="jeu_siam">
+         <Option output="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/jeu_siam" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 jeu_siam" />
+            <CompileFile command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="jeu_siam/fast">
+         <Option output="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/jeu_siam" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 jeu_siam/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/build-src-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/api_siam.c">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/condition_victoire_partie.c">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/coordonnees_plateau.c">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/coup_jeu.c">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/entree_sortie.c">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/jeu_siam.c">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/joueur.c">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/main.c">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/mode_interactif.c">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/orientation_deplacement.c">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/parseur_mode_interactif.c">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/piece_siam.c">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/plateau_modification.c">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/plateau_siam.c">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/type_piece.c">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/api_siam.h">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/condition_victoire_partie.h">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/coordonnees_plateau.h">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/coup_jeu.h">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/entree_sortie.h">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/jeu_siam.h">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/joueur.h">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/mode_interactif.h">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/orientation_deplacement.h">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/parseur_mode_interactif.h">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/piece_siam.h">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/plateau_modification.h">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/plateau_siam.h">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/type_piece.h">
+      </Unit>
+      <Unit filename="/fs03/share/users/paul.lannoy/home/Documents/TPINFO/CSC2/nom1_nom2_projet_siam/src/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
