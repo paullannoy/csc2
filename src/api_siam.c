@@ -11,8 +11,6 @@ coup_jeu api_siam_tenter_introduire_nouvelle_piece_si_possible(jeu_siam* jeu,
 {
     assert(jeu != NULL); // verification pointeur non nul
     assert(jeu_etre_integre(jeu));
-    assert(orientation_etre_integre(orientation)); // verification integrite orientation
-    assert(coordonnees_etre_dans_plateau(x,y)); // verification coordonne valable
 
     plateau_siam* plateau=&(jeu->plateau); // initialisation pointeur sur le plateau du jeu
     coup_jeu coup; // declaration coup du jeu
@@ -44,18 +42,17 @@ coup_jeu api_siam_tenter_deplacer_piece_si_possible(jeu_siam* jeu,
 {
     assert(jeu != NULL); // verification pointeur non nul
     assert(jeu_etre_integre(jeu));
-    assert(orientation_etre_integre(orientation)); // verification integrite orientation
-    assert(coordonnees_etre_dans_plateau(x,y)); // verification coordonne valable
 
     plateau_siam* plateau=&(jeu->plateau); // initialisation pointeur sur le plateau du jeu
     coup_jeu coup; // declaration coup du jeu
     coup_jeu_initialiser(&coup); // initialisation coup du jeu
-
-    type_piece typejoueur = joueur_obtenir_animal(jeu->joueur); // recupere le type que le joueur doit jouer
+    coup.valide = 0;
+    //type_piece typejoueur = jeu_obtenir_type_animal_courant(jeu);
 
     if(plateau_modification_deplacer_piece_etre_possible(plateau,x,y,deplacement,orientation) == 1)
     {
-        if(plateau_obtenir_piece_info(plateau,x,y)->type == typejoueur)
+
+        if(joueur_etre_type_animal(jeu->joueur, plateau_obtenir_piece_info(plateau,x,y)->type ) == 1 )
         {
             plateau_modification_deplacer_piece(plateau,x,y,deplacement, orientation);
             coup.valide = 1;
@@ -64,16 +61,15 @@ coup_jeu api_siam_tenter_deplacer_piece_si_possible(jeu_siam* jeu,
 
     }
 
-    if(poussee_etre_valide(plateau,x,y,deplacement))
-    {
-        poussee_realiser(plateau,x,y,orientation,typejoueur,&coup);
-        coup.valide = 1;
-    }
+    coordonnees_appliquer_deplacement(&x,&y,deplacement); // applique deplacement pour piece de poussee
 
-    else
+    /*if(poussee_etre_valide(plateau,x,y,deplacement) && (deplacement==orientation) )
     {
-        coup.valide = 0;
-    }
+        poussee_realiser(plateau,x,y,deplacement,typejoueur,&coup);
+        plateau->piece[x][y].orientation = orientation;
+        coup.valide = 1;
+        joueur_changer(&(jeu->joueur));
+    }*/
 
     return coup;
 }
@@ -84,8 +80,6 @@ coup_jeu api_siam_tenter_changer_orientation_piece_si_possible(jeu_siam* jeu,int
 {
     assert(jeu != NULL); // verification pointeur non nul
     assert(jeu_etre_integre(jeu));
-    assert(orientation_etre_integre(orientation)); // verification integrite orientation
-    assert(coordonnees_etre_dans_plateau(x,y)); // verification coordonne valable
 
     plateau_siam* plateau=&(jeu->plateau); // initialisation pointeur sur le plateau du jeu
     coup_jeu coup; // declaration coup du jeu
@@ -93,8 +87,6 @@ coup_jeu api_siam_tenter_changer_orientation_piece_si_possible(jeu_siam* jeu,int
 
     type_piece typejoueur = joueur_obtenir_animal(jeu->joueur); // recupere le type que le joueur doit jouer
     const piece_siam* piece = plateau_obtenir_piece_info(&(jeu->plateau),x,y); // recupere le type de la piece aux coordonnee indiqués
-
-
 
     if(plateau_modification_changer_orientation_piece_etre_possible(plateau,x,y,orientation)==1 && typejoueur==piece->type )
         //si modification orientation possible ET que type jouable par joueur egale au type de la piece indiquee

@@ -95,21 +95,7 @@ int plateau_modification_changer_orientation_piece_etre_possible(const plateau_s
     return 1;
 }
 
-void test_plateau_modification_changer_orientation_piece_etre_possible(void)
-{
-    plateau_siam* plateau=malloc(sizeof(plateau_siam));
-    plateau_initialiser(plateau);
-    piece_definir(&(plateau->piece[0][0]),elephant,haut);
 
-    printf("test_plateau_modification_changer_orientation_piece_etre_possible\n");
-
-    if(plateau_modification_changer_orientation_piece_etre_possible(plateau,2,2,haut)!=0)
-        printf("KO chgmnt orient sur rocher");(plateau,x0,y0)
-    if(plateau_modification_changer_orientation_piece_etre_possible(plateau,0,0,haut)!=0)
-        printf("KO chgmnt orient meme");
-    if(plateau_modification_changer_orientation_piece_etre_possible(plateau,0,0,bas)!=1)
-        printf("KO chgmnt orient possible");
-}
 
 
 
@@ -147,6 +133,11 @@ int plateau_modification_deplacer_piece_etre_possible(const plateau_siam* platea
     assert(plateau_etre_integre(plateau));
 
     const piece_siam* piece = plateau_obtenir_piece_info(plateau,x0,y0);
+
+    if( (x0==0 && direction_deplacement==gauche ) || (x0==(NBR_CASES-1) && direction_deplacement==droite ) || (y0==0 && direction_deplacement==bas ) || (x0==(NBR_CASES-1) && direction_deplacement==haut ) )
+    { // si le deplacement fais en sorte de sortir du plateau
+        return 0;
+    }
     if(piece_etre_animal(piece)==1)
     {
         if(direction_deplacement==haut && piece_etre_case_vide(&(plateau->piece[x0][y0+1]))==1)
