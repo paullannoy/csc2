@@ -85,8 +85,36 @@ typedef struct
 
 }action_a_realiser;
 
-
+/**
+ * Fonction action_initialiser:
+ * *************************
+ *    Initialise l'action comme etant "aucune action"
+ *
+ *    Necessite:
+ *      - Un pointeur non NULL vers une action_type modifiable.
+ *    Garantie:
+ *      - l'action_realiser pointee a maintenant pour action_type aucune_action.
+ */
 void action_initialiser(action_a_realiser* action_a_initialiser);
+
+/**
+ * Fonction action_initialiser:
+ * *************************
+ *    Traduit la ligne de commande passee en entree en une action_type sur l'element pointe par le pointeur passe en entree.
+ *
+ *    Necessite:
+ *      - Un pointeur non NULL vers une action_type modifiable.
+ *      - Une chaine de caractere non modifiable
+ *    Garantie:
+ *      - l'action a realiser pointee a pour type aucune_action si la chaine est vide, si la chaine est "fin" (3 manieres possibles, sensible a la casse), ou si un        
+ *        parametre passe en entree n'est pas integre.
+ *      - l'action a realiser pointee est de type introduction avec x, y et une orientation_deplacement integre si la chaine commence par "n "
+ *      - l'action a realiser pointee est de type changement_orientation avec x, y et une orientation_deplacement integre et  si la chaine commence par "o "
+ *      - l'action a realiser pointee est de type deplacement avec x, y, une orientation_deplacement (orientation) et une orientation_deplacement (direction) integre si la 
+ *        chaine commence par "d "
+ *      - l'action a realiser de type initialisation si la chaine est "i"
+ *      - l'action a realiser avec un type lecture_fichier avec filename, le nom du fichier a ouvrir si la chaine commence par "lit "
+ */
 void ligne_de_commande_parser(const char* ligne_commande,action_a_realiser* action_demandee);
 
 
